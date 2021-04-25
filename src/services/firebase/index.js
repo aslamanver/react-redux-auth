@@ -15,10 +15,5 @@ const firebaseConfig = {
 }
 
 firebase.initializeApp(firebaseConfig)
-// firebase.functions().useFunctionsEmulator('http://localhost:5001')
-
-export class CloudFunctions {
-    static onAuth = firebase.functions().httpsCallable('onAuth')
-}
 
 export default firebase;
