@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import firebase from 'services/firebase'
 import * as Consts from 'services/redux/consts'
 import Log from 'utils/Log'
 
@@ -6,21 +7,15 @@ export default class BaseComponent extends Component {
 
     Log = Log
     Consts = Consts
+    recaptchaVerifier
+    confirmationResult
 
     componentDidMount() {
         // window.componentHandler.upgradeDom();
     }
 
-    onLogin = (e) => {
-        localStorage.setItem('accessToken', 'TOKEN')
-        this.props.setUser({})
-        this.props.setAuth(Consts.AUTH_SUCCESS)
-    }
-
     onLogout = (e) => {
-        localStorage.removeItem('accessToken')
-        this.props.setUser(null)
-        this.props.setAuth(Consts.AUTH_REQUIRED)
+        firebase.auth().signOut()
     }
 
     onChange = (e) => this.setState({ [e.target.id]: e.target.value });

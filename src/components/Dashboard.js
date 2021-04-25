@@ -7,7 +7,7 @@ class Dashboard extends BaseComponent {
     render() {
         return (
             <div>
-                <button onClick={this.onLogout} >Dashboard | Logout</button>
+                <button onClick={this.onLogout} >Dashboard Logout</button>
             </div>
         )
     }
