@@ -1,16 +1,14 @@
 {
-  "name": "luckynikah",
+  "name": "react-redux-auth-firebase",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
-    "bootstrap": "^4.6.0",
     "firebase": "^8.4.2",
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
-    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
@@ -23,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy --only hosting"
+    "deploy": "react-scripts build && firebase deploy --only hosting"
   },
   "eslintConfig": {
     "extends": [

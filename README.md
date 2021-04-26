@@ -1,1 +1,1 @@
-### Firebase React Redux Auth
+### React Redux Auth - Firebase

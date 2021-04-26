@@ -4,11 +4,11 @@ import "firebase/firestore"
 import "firebase/functions"
 
 const firebaseConfig = {
-    databaseURL: "https://g.firebaseio.com",
-    apiKey: "g",
-    authDomain: "g.firebaseapp.com",
-    projectId: "g",
-    storageBucket: "g.appspot.com",
+    databaseURL: "https://.firebaseio.com",
+    apiKey: "",
+    authDomain: ".firebaseapp.com",
+    projectId: "",
+    storageBucket: ".appspot.com",
     messagingSenderId: "",
     appId: "1:495997402923:web:",
     measurementId: "G-"
