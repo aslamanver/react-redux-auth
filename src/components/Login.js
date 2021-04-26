@@ -8,8 +8,8 @@ class Login extends BaseComponent {
     constructor(props) {
         super(props)
         this.state = {
-            phoneNumber: '+94762724081',
-            verificationCode: '123456',
+            phoneNumber: '',
+            verificationCode: '',
             confirmationResult: ''
         }
     }
